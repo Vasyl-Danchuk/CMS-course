@@ -1009,7 +1009,7 @@ body button {
 }
 
 .footer_body p {
-    max-width: 20.2rem;
+    max-width: 21rem;
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 400;
@@ -1017,6 +1017,10 @@ body button {
 
 .footer_body p + p {
     margin-top: 1.2rem;
+}
+
+.footer_company, .footer_company-address, .footer_email {
+    display: none;
 }
 
 .footer_logo {
@@ -1050,6 +1054,7 @@ body button {
     width: 2.4rem;
     height: 2.4rem;
     background-image: url("../images/inst.svg");
+    margin-left: 1.6rem;
 }
 
 .footer_nav {
@@ -1094,6 +1099,13 @@ body button {
     margin-top: 1.6rem;
 }
 
+.footer_catalog-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 .footer_catalog {
     list-style: none;
 }
@@ -1122,12 +1134,24 @@ body button {
 .footer_bottom {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
     padding: 0 4rem 0px 4rem;
-    height: 5.5rem;
+    min-height: 5.5rem;
+}
+
+.footer_bottom-left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 50%;
 }
 
 .footer_bottom-privat {
@@ -1208,6 +1232,16 @@ body button {
     .sale_wrap .card-news {
         margin-top: 3rem;
     }
+
+    .footer_bottom {
+        padding-top: 1.8rem;
+    }
+
+    .footer_bottom-left {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1256,6 +1290,41 @@ body button {
 
     .sale_card {
         width: 100%;
+    }
+
+    .footer_body {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .footer_location {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 4.8rem;
+        color: #E5E6E7;
+    }
+
+    .footer_social-fb {
+        background-image: url("../images/mobile-fb.svg");
+    }
+
+    .footer_social-insta {
+        background-image: url("../images/mobile-inst.svg");
+    }
+
+    .footer_company, .footer_company-address, .footer_email {
+        display: block;
+    }
+
+    .footer_email {
+        margin-bottom: 1.8rem;
+    }
+
+    .footer_address, .footer_schedule {
+        display: none;
     }
 }
 
@@ -1331,6 +1400,35 @@ body button {
         background-image: url("../images/mobile-access-control.png");
         background-size: cover;
     }
+
+    .footer_info {
+        min-width: 21rem;
+    }
+
+    .footer_catalog-wrap {
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer_catalog-first {
+        margin-top: 2.4rem;
+    }
+
+    .footer_catalog-last {
+        width: 21rem;
+        margin-top: -2.6rem;
+    }
+
+    .footer_bottom {
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer_bottom-left {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1385,5 +1483,17 @@ body button {
     .sale .card-news .sale_card-img--news {
         background-size: cover;
         width: 50%;
+    }
+
+    .footer_body p, .footer_body a {
+        font-size: 1.4rem;
+    }
+
+    .footer_info {
+        min-width: 12.8rem;
+    }
+
+    .footer_catalog {
+        max-width: 12.8rem !important;
     }
 }
