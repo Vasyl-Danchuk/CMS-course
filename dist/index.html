@@ -42,6 +42,15 @@
                         <a class="header_feedback-tel" href="tel:84951323133">8 495 132-31-33</a>
                         <a href="/" class="header_feedback-btn">Обратный звонок</a>
                     </div>
+                    <div class="header_profile">
+                        <span>Привет, </span><a href="/" class="header_profile-name">Андрей</a>
+                        <a class="header_profile-man" href="/">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0002 5C13.0002 7.76142 10.7617 10 8.00024 10C5.23882 10 3.00024 7.76142 3.00024 5C3.00024 2.23858 5.23882 0 8.00024 0C10.7617 0 13.0002 2.23858 13.0002 5ZM11.0002 5C11.0002 6.65685 9.6571 8 8.00024 8C6.34339 8 5.00024 6.65685 5.00024 5C5.00024 3.34315 6.34339 2 8.00024 2C9.6571 2 11.0002 3.34315 11.0002 5Z" fill="white"/>
+                                <path d="M3.02472 10.2903C3.16301 10.1835 3.33058 10.1177 3.5052 10.1118C4.01629 10.0945 4.2758 10.2136 4.47542 10.4393C4.8606 10.8748 4.60749 11.5818 4.15445 11.9462C3.32157 12.616 2.67759 13.4973 2.30628 14.4998H13.6933C13.322 13.4975 12.6783 12.6164 11.8457 11.9466C11.3926 11.5822 11.1396 10.875 11.5249 10.4395C11.7245 10.2137 11.984 10.0947 12.495 10.1121C12.6695 10.1181 12.837 10.1839 12.9752 10.2906C14.5965 11.5427 15.7154 13.3928 15.9865 15.502C16.0569 16.0498 15.6024 16.4998 15.0501 16.4998H0.949435C0.39715 16.4998 -0.0573196 16.0498 0.0130746 15.502C0.284144 13.3927 1.40322 11.5424 3.02472 10.2903Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
                     <div class="store">
                         <a href="/" class="store_items">
                             <span class="icon-Scale"></span>
@@ -57,6 +66,11 @@
         </div>
         <div class="container">
             <div class="header_mu" id="headerMenu">
+                <form class="search" action="/" >
+                    <input type="text" class="search_input" placeholder="Я ищу...">
+                    <button class="search_btn" type="submit" title="Поиск"><span class="icon-Search"></span></button>
+                </form>
+                <a class="header_mu-mobile" href="tel:84951323133">8 495 132-31-33</a>
                 <div class="header_menu">
                     <span class="header_menu-title">Меню</span>
                     <ul>
@@ -65,21 +79,30 @@
                         <li class="header_menu-item"><a href="/">Прайс-лист</a></li>
                         <li class="header_menu-item"><a href="/">Скачать</a></li>
                     </ul>
+                    <ul class="header_menu-tabletList">
+                        <li class="header_menu-item"><a href="/">Каталог</a></li>
+                        <li class="header_menu-item"><a href="/">Проекты</a></li>
+                        <li class="header_menu-item"><a href="/">Поддержка</a></li>
+                        <li class="header_menu-item"><a href="/">Контакты</a></li>
+                    </ul>
                 </div>
                 <div class="header_catalog">
                     <span class="header_catalog-title">Каталог</span>
-                    <ul>
-                        <li class="header_catalog-item"><a href="/">Учет рабочего времени</a></li>
-                        <li class="header_catalog-item"><a href="/">Умный замок</a></li>
-                        <li class="header_catalog-item"><a href="/">Системы контроля доступа (СКУД)</a></li>
-                        <li class="header_catalog-item"><a href="/">Системы контроля прохода</a></li>
-                    </ul>
+                    <div class="catalog-wrap">
+                        <ul>
+                            <li class="header_catalog-item"><a href="/">Учет рабочего времени</a></li>
+                            <li class="header_catalog-item"><a href="/">Умный замок</a></li>
+                            <li class="header_catalog-item"><a href="/">Системы контроля доступа (СКУД)</a></li>
+                            <li class="header_catalog-item"><a href="/">Системы контроля прохода</a></li>
+                        </ul>
+                        <ul class="header_catalog-sequel">
+                            <li class="header_catalog-item"><a href="/">Встраиваемые модули</a></li>
+                            <li class="header_catalog-item"><a href="/">Видеонаблюдение</a></li>
+                        </ul>
+                    </div>
     
                 </div>
-                <ul class="header_catalog-sequel">
-                    <li class="header_catalog-item"><a href="/">Встраиваемые модули</a></li>
-                    <li class="header_catalog-item"><a href="/">Видеонаблюдение</a></li>
-                </ul>
+                <a class="header_feedback-telMu" href="tel:84951323133">8 495 132-31-33</a>
             </div>
         </div>
     </header>
@@ -87,19 +110,19 @@
     <main class="main">
         <div class="main_slider">
             <div class="main_slider-item">
-                <img src="assets/images/header-face.svg" alt="ProFaceX" class="main_slider-img">
+                <div class="main_slider-img"></div>
                 <a href="/" class="primary-btn main_slider-btn">Подробнее<span class="go"></span></a>
             </div>
             <div class="main_slider-item">
-                <img src="assets/images/header-face.svg" alt="ProFaceX" class="main_slider-img">
+                <div class="main_slider-img"></div>
                 <a href="/" class="primary-btn main_slider-btn">Подробнее<span class="go"></span></a>
             </div>
             <div class="main_slider-item">
-                <img src="assets/images/header-face.svg" alt="ProFaceX" class="main_slider-img">
+                <div class="main_slider-img"></div>
                 <a href="/" class="primary-btn main_slider-btn">Подробнее<span class="go"></span></a>
             </div>
             <div class="main_slider-item">
-                <img src="assets/images/header-face.svg" alt="ProFaceX" class="main_slider-img">
+                <div class="main_slider-img"></div>
                 <a href="/" class="primary-btn main_slider-btn">Подробнее<span class="go"></span></a>
             </div>
         </div>
@@ -114,7 +137,7 @@
     </main>
     <section class="offer">
         <div class="container">
-            <ul class="offer_list">
+            <ul class="offer_list" id="offerList">
                 <li class="offer_list-item">
                     <img src="assets/images/offer1.png" alt="Учет рабочего времени">
                     <span>Учет рабочего времени</span>
@@ -173,20 +196,24 @@
     <section class="sale">
         <div class="container">
             <div class="sale_wrap">
-                <div class="sale_card card-discount">
-                    <span class="sale_card-discount">-5%</span>
-                    <h3 class="sale_card-title">mkw-h</h3>
-                    <p class="sale_card-description">MKW-V и MKW-H - это водонепроницаемые автономные устройства контроля доступа с металлическим корпусом IP65 и клавиатурой.</p>
-                    <a href="/" class="secondary-btn sale_card-btn">Купить</a>
-                    <img src="assets/images/control-access.png" alt="Контроль доступа">
+                <div class="sale_card card-discount">\
+                    <div class="sale_card-info">
+                        <span class="sale_card-discount">-5%</span>
+                        <h3 class="sale_card-title">mkw-h</h3>
+                        <p class="sale_card-description">MKW-V и MKW-H - это водонепроницаемые автономные устройства контроля доступа с металлическим корпусом IP65 и клавиатурой.</p>
+                        <a href="/" class="secondary-btn sale_card-btn">Купить</a>
+                    </div>
+                    <div class="sale_card-img--discount"></div>
                 </div>
                 <div class="sale_card card-news">
-                    <span class="sale_card-news">Черная пятница!</span>
-                    <h3 class="sale_card-title">ZN-T3</h3>
-                    <p class="sale_card-description">Wi-Fi камера для измерения температуры тела.</p>
-                    <span class="sale_price">10 321 ₽</span>
-                    <a href="/" class="primary-btn sale_card-btn">Купить</a>
-                    <img src="assets/images/wi-fi-cam.png" alt="IP-камера">
+                    <div class="sale_card-info">
+                        <span class="sale_card-news">Черная пятница!</span>
+                        <h3 class="sale_card-title">ZN-T3</h3>
+                        <p class="sale_card-description">Wi-Fi камера для измерения температуры тела.</p>
+                        <span class="sale_price">10 321 ₽</span>
+                        <a href="/" class="primary-btn sale_card-btn">Купить</a>
+                    </div>
+                    <div class="sale_card-img--news"></div>
                 </div>
             </div>
         </div>

@@ -16,4 +16,16 @@ $(document).ready(function () {
         autoplay: true,
         adaptiveHeight: true,
     });
+    let widthScreen = window.screen.width;
+    let offerList = document.getElementById("offerList");
+    if (widthScreen <= 576){
+        offerList.classList.add("offer_slider");
+    };
+
+    $('.offer_slider').slick({
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        adaptiveHeight: true,
+    });
 })

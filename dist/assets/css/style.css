@@ -324,6 +324,28 @@ body button {
     margin-left: 2.2rem;
 }
 
+.header_profile {
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header_profile-name {
+    display: block;
+    color: #78BC27;
+    margin-left: .4rem;
+}
+
+.header_profile-man {
+    line-height: 2.4rem;
+    display: block;
+    text-align: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-top: .6rem;
+    margin-left: .8rem;
+}
+
 .header .store {
     display: -ms-flexbox;
     display: flex;
@@ -457,6 +479,18 @@ body button {
     position: relative;
 }
 
+.main_slider-img {
+    background-image: url("../images/header-face.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 110rem;
+    height: 40rem;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+}
+
 .main_slider-item {
     text-align: center;
 }
@@ -562,12 +596,56 @@ body button {
 }
 
 .offer {
-    height: 25.9rem;
+    min-height: 25.9rem;
+}
+
+.offer_slider .slick-list {
+    overflow: hidden;
+}
+
+.offer_slider .slick-track {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.offer_slider .slick-dots {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.6rem;
+}
+
+.offer_slider .slick-dots li {
+    list-style: none;
+    width: .8rem;
+    height: .8rem;
+    background-color: #9EA1A7;
+    border-radius: 50%;
+}
+
+.offer_slider .slick-dots li + li {
+    margin-left: .7rem;
+}
+
+.offer_slider .slick-dots .slick-active {
+    background: #21232E;
+}
+
+.offer_slider .slick-dots button {
+    font-size: 0;
 }
 
 .offer_list {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
@@ -632,7 +710,7 @@ body button {
 
 .popular_card {
     position: relative;
-    width: 34.7rem;
+    max-width: 34.7rem;
     height: 46.1rem;
     border: 1px solid #E5E6E7;
     padding: 2.7rem 1.5rem 1.9rem 1.5rem;
@@ -1002,4 +1080,114 @@ body button {
     margin-top: .8rem;
     cursor: pointer;
     background-image: url("../images/chat.png");
+}
+
+@media screen and (max-width: 1188px) {
+    .header_top .nav_item + .nav_item {
+        margin-left: 1rem;
+    }
+
+    .header_feedback-tel {
+        display: none;
+    }
+
+    .header_feedback-btn {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header_top-inner {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+
+    .header_feedback {
+        display: none;
+    }
+
+    .sale_wrap {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .sale_wrap .card-news {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header nav {
+        display: none;
+    }
+
+    .header_feedback {
+        display: none;
+    }
+
+    .header_profile {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .main_slider-img {
+        background-image: url("../images/main-tablet.svg");
+        max-width: 70rem;
+        height: 40rem;
+    }
+
+    .main_slider .slick-arrow {
+        display: none !important;
+    }
+
+    .offer_list {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .offer_list-item {
+        width: 33.3%;
+    }
+
+    .popular_card-list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .sale_card {
+        width: 73.8rem;
+    }
+}
+
+@media screen and (max-width: 696px) {
+    .header .search {
+        display: none;
+    }
+
+    .header_profile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main {
+        padding-top: 7.1rem;
+    }
+
+    .main_slider-img {
+        background-image: url("../images/main-mobile.svg");
+        max-width: 37rem;
+        height: 45rem;
+    }
+
+    .offer_list-item {
+        text-align: center;
+    }
+
+    .sale_card {
+        width: 32rem;
+    }
 }
