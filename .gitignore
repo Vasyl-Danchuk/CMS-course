@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 src
 node_modules
 gulpfile.js
 package.json
 package-lock.json
+=======
+/src
+/node_modules
+gulpfile.js
+package-lock.json
+package.json
+>>>>>>> 04be3cb68ce90827ad0220f90c74e5abc6b2ab90
