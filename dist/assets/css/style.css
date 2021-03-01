@@ -227,12 +227,12 @@ body button {
 
 .header_top .icon-Menu {
     font-size: 2.4rem;
-    margin-top: -1.2rem;
+    cursor: pointer;
 }
 
 .header_top .icon-X {
     font-size: 2.4rem;
-    margin-top: -1.2rem;
+    cursor: pointer;
 }
 
 .header_top .logo {
@@ -605,6 +605,7 @@ body button {
     z-index: 2;
     font-size: 0;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .main .slick-dots {
@@ -702,15 +703,6 @@ body button {
     font-size: 0;
 }
 
-.offer_list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
 .offer_list-item {
     display: -ms-flexbox;
     display: flex;
@@ -727,12 +719,17 @@ body button {
     text-align: left;
 }
 
-.offer_list-item img {
-    width: 18.6rem;
-    height: 13.5rem;
+.offer_list-item:hover a {
+    color: #89CF36;
 }
 
-.offer_list-item span {
+.offer_list-item img {
+    max-width: 18.6rem;
+    height: auto;
+}
+
+.offer_list-item a {
+    display: block;
     color: #21232E;
     font-weight: 400;
     font-size: 1.8rem;
@@ -1233,6 +1230,20 @@ body button {
         margin-top: 3rem;
     }
 
+    .footer_catalog-wrap {
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer_info {
+        min-width: 21rem;
+    }
+
+    .footer_catalog-last {
+        width: 21rem;
+    }
+
     .footer_bottom {
         padding-top: 1.8rem;
     }
@@ -1326,6 +1337,14 @@ body button {
     .footer_address, .footer_schedule {
         display: none;
     }
+
+    .footer_catalog-first {
+        margin-top: 2.4rem;
+    }
+
+    .footer_catalog-last {
+        margin-top: -2.6rem;
+    }
 }
 
 @media screen and (max-width: 696px) {
@@ -1401,23 +1420,10 @@ body button {
         background-size: cover;
     }
 
-    .footer_info {
-        min-width: 21rem;
-    }
-
     .footer_catalog-wrap {
         -ms-flex-pack: justify;
         justify-content: space-between;
         width: 100%;
-    }
-
-    .footer_catalog-first {
-        margin-top: 2.4rem;
-    }
-
-    .footer_catalog-last {
-        width: 21rem;
-        margin-top: -2.6rem;
     }
 
     .footer_bottom {
@@ -1489,11 +1495,20 @@ body button {
         font-size: 1.4rem;
     }
 
+    .footer_location {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer_location-wrap {
+        margin-top: 2.4rem;
+    }
+
     .footer_info {
         min-width: 12.8rem;
     }
 
     .footer_catalog {
-        max-width: 12.8rem !important;
+        max-width: 12.8rem;
     }
 }
